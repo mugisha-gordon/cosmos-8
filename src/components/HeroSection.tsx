@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -20,24 +21,33 @@ const HeroSection = () => {
         >
           Tech. Done Right.
         </motion.p>
+        <motion.p
+          className="mt-6 text-muted-foreground max-w-xl mx-auto leading-relaxed"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.7, duration: 0.6 }}
+        >
+          Software development, network engineering, and cybersecurity solutions 
+          built with precision and purpose. Based in Kampala, serving the world.
+        </motion.p>
         <motion.div
           className="mt-10 flex flex-wrap justify-center gap-4"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.8, duration: 0.6 }}
+          transition={{ delay: 0.9, duration: 0.6 }}
         >
-          <a
-            href="#projects"
+          <Link
+            to="/projects"
             className="px-8 py-3 rounded-lg font-medium text-sm bg-primary text-primary-foreground hover:opacity-90 transition-opacity"
           >
-            View Projects
-          </a>
-          <a
-            href="#contact"
+            View Our Work
+          </Link>
+          <Link
+            to="/contact"
             className="px-8 py-3 rounded-lg font-medium text-sm border border-border text-foreground hover:bg-muted transition-colors"
           >
             Get In Touch
-          </a>
+          </Link>
         </motion.div>
       </div>
 
