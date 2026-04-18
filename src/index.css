@@ -6,45 +6,45 @@
 
 @layer base {
   :root {
-    /* LIGHT THEME — "Dawn Synthesis": warm porcelain with hydro-thermal accents */
-    --background: 36 38% 96%;
-    --foreground: 216 25% 14%;
+    /* LIGHT THEME — "Ember Tide": dim warm parchment kissed by fire & water */
+    --background: 28 35% 88%;
+    --foreground: 216 35% 12%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 216 25% 14%;
+    --card: 30 40% 94%;
+    --card-foreground: 216 35% 12%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 216 25% 14%;
+    --popover: 30 40% 94%;
+    --popover-foreground: 216 35% 12%;
 
-    --primary: 195 85% 38%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 195 90% 32%;
+    --primary-foreground: 30 50% 97%;
 
-    --secondary: 15 85% 52%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 14 88% 48%;
+    --secondary-foreground: 30 50% 97%;
 
-    --muted: 36 25% 90%;
-    --muted-foreground: 216 15% 38%;
+    --muted: 28 22% 82%;
+    --muted-foreground: 216 20% 32%;
 
-    --accent: 195 60% 92%;
-    --accent-foreground: 195 80% 22%;
+    --accent: 195 55% 82%;
+    --accent-foreground: 195 90% 18%;
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: 0 80% 52%;
+    --destructive-foreground: 30 50% 97%;
 
-    --border: 36 20% 84%;
-    --input: 36 20% 84%;
-    --ring: 195 85% 38%;
+    --border: 28 25% 74%;
+    --input: 28 25% 74%;
+    --ring: 195 90% 32%;
 
     --radius: 0.75rem;
 
-    --fire: 15 88% 50%;
-    --fire-glow: 25 95% 58%;
-    --water: 195 85% 40%;
-    --water-deep: 210 80% 30%;
-    --nexus: 45 90% 55%;
-    --nexus-glow: 45 100% 70%;
-    --glass: 0 0% 100%;
-    --glass-border: 36 20% 80%;
+    --fire: 12 92% 46%;
+    --fire-glow: 22 98% 54%;
+    --water: 198 92% 34%;
+    --water-deep: 212 85% 24%;
+    --nexus: 38 92% 50%;
+    --nexus-glow: 30 100% 62%;
+    --glass: 30 40% 94%;
+    --glass-border: 28 30% 70%;
 
     --font-display: 'Space Grotesk', sans-serif;
     --font-mono: 'JetBrains Mono', monospace;
