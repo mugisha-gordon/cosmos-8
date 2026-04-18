@@ -50,14 +50,14 @@
     --font-mono: 'JetBrains Mono', monospace;
     --font-serif: 'Fraunces', serif;
 
-    --sidebar-background: 36 38% 96%;
-    --sidebar-foreground: 216 25% 14%;
-    --sidebar-primary: 195 85% 38%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 36 25% 90%;
-    --sidebar-accent-foreground: 216 25% 14%;
-    --sidebar-border: 36 20% 84%;
-    --sidebar-ring: 195 85% 38%;
+    --sidebar-background: 28 35% 88%;
+    --sidebar-foreground: 216 35% 12%;
+    --sidebar-primary: 195 90% 32%;
+    --sidebar-primary-foreground: 30 50% 97%;
+    --sidebar-accent: 28 22% 82%;
+    --sidebar-accent-foreground: 216 35% 12%;
+    --sidebar-border: 28 25% 74%;
+    --sidebar-ring: 195 90% 32%;
   }
 
   .dark {
