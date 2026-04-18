@@ -50,7 +50,7 @@ const Index = () => {
     <PageLayout>
       <PageHero
         bgImage={heroImg}
-        eyebrow="Cosmos 8 · Est. 2019"
+        eyebrow="Tech Done Right"
         title={<>COSMOS <span className="nexus-text">8</span></>}
         subtitle="A Kampala-born technology firm engineering software, networks, and security systems for organizations that demand the right thing, built right, the first time."
         alt="Cosmic vortex blending water and fire energies"

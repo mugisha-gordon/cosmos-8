@@ -12,7 +12,7 @@ interface PageHeroProps {
 
 const PageHero = ({ bgImage, eyebrow, title, subtitle, alt = "", children }: PageHeroProps) => {
   return (
-    <section className="relative min-h-[80vh] flex items-center justify-center px-6 py-24 overflow-hidden">
+    <section className="relative min-h-[70vh] sm:min-h-[80vh] flex items-center justify-center px-4 sm:px-6 py-20 sm:py-24 overflow-hidden">
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <img
@@ -35,14 +35,14 @@ const PageHero = ({ bgImage, eyebrow, title, subtitle, alt = "", children }: Pag
       <div className="absolute bottom-10 left-6 md:left-10 w-10 h-10 border-l-2 border-b-2 border-fire/60 z-10" />
       <div className="absolute bottom-10 right-6 md:right-10 w-10 h-10 border-r-2 border-b-2 border-water/60 z-10" />
 
-      {/* Coordinates marker */}
-      <div className="absolute top-24 left-1/2 -translate-x-1/2 z-10 font-mono text-[10px] text-muted-foreground tracking-widest opacity-70">
+      {/* Coordinates marker — hidden on small screens to avoid clutter */}
+      <div className="hidden sm:block absolute top-24 left-1/2 -translate-x-1/2 z-10 font-mono text-[10px] text-muted-foreground tracking-widest opacity-70 whitespace-nowrap">
         N 00°18'49" · E 32°34'52" · KAMPALA
       </div>
 
       <div className="container mx-auto max-w-4xl text-center relative z-10">
         <motion.p
-          className="text-xs md:text-sm font-mono text-fire uppercase tracking-[0.3em] mb-4"
+          className="text-[10px] sm:text-xs md:text-sm font-mono text-fire uppercase tracking-[0.25em] sm:tracking-[0.3em] mb-4"
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -50,7 +50,7 @@ const PageHero = ({ bgImage, eyebrow, title, subtitle, alt = "", children }: Pag
           ◢ {eyebrow} ◣
         </motion.p>
         <motion.h1
-          className="text-5xl sm:text-6xl md:text-7xl font-display font-bold text-foreground mb-6 leading-[1.05]"
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold text-foreground mb-6 leading-[1.05] break-words"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
@@ -58,7 +58,7 @@ const PageHero = ({ bgImage, eyebrow, title, subtitle, alt = "", children }: Pag
           {title}
         </motion.h1>
         <motion.p
-          className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed"
+          className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed px-2"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.25 }}
