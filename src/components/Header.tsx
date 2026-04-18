@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import logo from "@/assets/cosmos8-logo.png";
+import ThemeToggle from "./ThemeToggle";
 
 const navItems = [
   { label: "Home", path: "/" },
@@ -40,12 +41,16 @@ const Header = () => {
             </Link>
           ))}
         </nav>
-        <button
-          className="lg:hidden text-foreground"
-          onClick={() => setOpen(!open)}
-        >
-          {open ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        <div className="flex items-center gap-3">
+          <ThemeToggle />
+          <button
+            className="lg:hidden text-foreground"
+            onClick={() => setOpen(!open)}
+            aria-label="Toggle menu"
+          >
+            {open ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
       {open && (
         <nav className="lg:hidden backdrop-blur-xl bg-background/90 border-b border-border/50 px-6 pb-4 flex flex-col gap-3">
