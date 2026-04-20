@@ -37,7 +37,7 @@ const PageHero = ({ bgImage, eyebrow, title, subtitle, alt = "", children }: Pag
 
       <div className="container mx-auto max-w-4xl text-center relative z-10">
         <motion.p
-          className="text-[10px] sm:text-xs md:text-sm font-mono text-fire dark:text-fire uppercase tracking-[0.25em] sm:tracking-[0.3em] mb-4"
+          className="text-[10px] sm:text-xs md:text-sm font-mono text-fire dark:text-fire uppercase tracking-[0.25em] sm:tracking-[0.3em] mb-4 text-etched"
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -45,7 +45,7 @@ const PageHero = ({ bgImage, eyebrow, title, subtitle, alt = "", children }: Pag
           ◢ {eyebrow} ◣
         </motion.p>
         <motion.h1
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold text-foreground mb-6 leading-[1.05] break-words"
+          className="text-[2.25rem] sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-display font-bold mb-6 leading-[1.02] tracking-tight break-words text-3d-nexus"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
@@ -53,7 +53,7 @@ const PageHero = ({ bgImage, eyebrow, title, subtitle, alt = "", children }: Pag
           {title}
         </motion.h1>
         <motion.p
-          className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed px-2"
+          className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed px-2 text-rich"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.25 }}
