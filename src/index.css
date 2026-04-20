@@ -208,17 +208,21 @@
      RICH TEXT STYLING — 3D titles, textured body, etched accents
      ============================================================ */
 
-  /* 3D extruded title — neutral (uses foreground tone) */
+  /* 3D extruded title — neutral (uses foreground tone). THICK extrusion. */
   .text-3d {
     color: hsl(var(--foreground));
     text-shadow:
-      0 1px 0 hsl(var(--foreground) / 0.2),
-      0 2px 0 hsl(var(--foreground) / 0.15),
-      0 3px 0 hsl(var(--foreground) / 0.1),
-      0 4px 0 hsl(var(--foreground) / 0.08),
-      0 6px 12px hsl(var(--background) / 0.5),
-      0 0 24px hsl(var(--nexus) / 0.15);
-    letter-spacing: -0.01em;
+      0 1px 0 hsl(var(--foreground) / 0.35),
+      0 2px 0 hsl(var(--foreground) / 0.32),
+      0 3px 0 hsl(var(--foreground) / 0.28),
+      0 4px 0 hsl(var(--foreground) / 0.24),
+      0 5px 0 hsl(var(--foreground) / 0.2),
+      0 6px 0 hsl(var(--foreground) / 0.16),
+      0 7px 0 hsl(var(--foreground) / 0.12),
+      0 8px 0 hsl(var(--foreground) / 0.08),
+      0 12px 24px hsl(var(--background) / 0.55),
+      0 0 32px hsl(var(--nexus) / 0.18);
+    letter-spacing: -0.015em;
   }
 
   /* 3D fire — molten extrusion */
@@ -228,9 +232,13 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     filter:
-      drop-shadow(0 1px 0 hsl(12 70% 25% / 0.6))
-      drop-shadow(0 3px 0 hsl(12 70% 18% / 0.5))
-      drop-shadow(0 8px 18px hsl(var(--fire) / 0.45));
+      drop-shadow(0 1px 0 hsl(12 70% 25% / 0.85))
+      drop-shadow(0 2px 0 hsl(12 70% 22% / 0.8))
+      drop-shadow(0 3px 0 hsl(12 70% 20% / 0.75))
+      drop-shadow(0 4px 0 hsl(12 70% 18% / 0.7))
+      drop-shadow(0 5px 0 hsl(12 70% 16% / 0.6))
+      drop-shadow(0 6px 0 hsl(12 70% 14% / 0.5))
+      drop-shadow(0 12px 24px hsl(var(--fire) / 0.55));
   }
 
   /* 3D water — deep submerged extrusion */
@@ -240,32 +248,50 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     filter:
-      drop-shadow(0 1px 0 hsl(212 80% 18% / 0.6))
-      drop-shadow(0 3px 0 hsl(212 80% 12% / 0.5))
-      drop-shadow(0 8px 18px hsl(var(--water) / 0.45));
+      drop-shadow(0 1px 0 hsl(212 80% 18% / 0.85))
+      drop-shadow(0 2px 0 hsl(212 80% 16% / 0.8))
+      drop-shadow(0 3px 0 hsl(212 80% 14% / 0.75))
+      drop-shadow(0 4px 0 hsl(212 80% 12% / 0.7))
+      drop-shadow(0 5px 0 hsl(212 80% 10% / 0.6))
+      drop-shadow(0 6px 0 hsl(212 80% 8% / 0.5))
+      drop-shadow(0 12px 24px hsl(var(--water) / 0.55));
   }
 
-  /* 3D nexus — fire-water-gold tri-tone, the showpiece */
+  /* 3D nexus — fire-water-gold tri-tone, the showpiece. THICK. */
   .text-3d-nexus {
     background: linear-gradient(135deg, hsl(var(--water)) 0%, hsl(var(--nexus)) 50%, hsl(var(--fire)) 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     filter:
-      drop-shadow(0 2px 0 hsl(var(--background) / 0.7))
-      drop-shadow(0 4px 0 hsl(var(--background) / 0.5))
-      drop-shadow(0 10px 24px hsl(var(--nexus) / 0.4))
-      drop-shadow(0 0 30px hsl(var(--fire) / 0.25));
+      drop-shadow(0 1px 0 hsl(216 60% 8% / 0.85))
+      drop-shadow(0 2px 0 hsl(216 60% 8% / 0.8))
+      drop-shadow(0 3px 0 hsl(216 60% 8% / 0.75))
+      drop-shadow(0 4px 0 hsl(216 60% 8% / 0.7))
+      drop-shadow(0 5px 0 hsl(216 60% 8% / 0.6))
+      drop-shadow(0 6px 0 hsl(216 60% 8% / 0.5))
+      drop-shadow(0 7px 0 hsl(216 60% 8% / 0.4))
+      drop-shadow(0 14px 28px hsl(var(--nexus) / 0.45))
+      drop-shadow(0 0 36px hsl(var(--fire) / 0.3));
   }
 
-  /* Textured body text — subtle gradient + soft emboss, still readable */
+  /* Textured body text — solid readable color + subtle engraved depth + faint noise sheen */
   .text-textured {
-    background-image:
-      linear-gradient(180deg, hsl(var(--foreground)) 0%, hsl(var(--foreground) / 0.85) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0 1px 0 hsl(var(--background) / 0.4);
+    color: hsl(var(--foreground));
+    text-shadow:
+      0 1px 0 hsl(var(--background) / 0.7),
+      0 -1px 0 hsl(var(--foreground) / 0.1),
+      0 2px 4px hsl(var(--background) / 0.4);
+    position: relative;
+  }
+  .text-textured::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.18;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.6' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   }
 
   /* Etched / engraved label text — for eyebrows and small caps */
@@ -276,7 +302,7 @@
       0 -1px 0 hsl(var(--foreground) / 0.05);
   }
 
-  /* Subtle textured paragraph — adds depth without sacrificing legibility */
+  /* Rich paragraph — adds depth without sacrificing legibility */
   .text-rich {
     color: hsl(var(--muted-foreground));
     text-shadow: 0 1px 0 hsl(var(--background) / 0.5);
@@ -285,10 +311,14 @@
   /* Light-theme tuning so 3D doesn't get muddy on warm parchment */
   :root .text-3d {
     text-shadow:
-      0 1px 0 hsl(216 30% 30% / 0.2),
-      0 2px 0 hsl(216 30% 25% / 0.15),
-      0 3px 0 hsl(216 30% 20% / 0.1),
-      0 6px 14px hsl(216 40% 15% / 0.18);
+      0 1px 0 hsl(216 30% 28% / 0.35),
+      0 2px 0 hsl(216 30% 25% / 0.3),
+      0 3px 0 hsl(216 30% 22% / 0.25),
+      0 4px 0 hsl(216 30% 20% / 0.2),
+      0 5px 0 hsl(216 30% 18% / 0.16),
+      0 6px 0 hsl(216 30% 16% / 0.13),
+      0 7px 0 hsl(216 30% 14% / 0.1),
+      0 12px 22px hsl(216 40% 15% / 0.22);
   }
 
   /* Light-theme hero: no overlays — invert text to high-contrast warm-cream
