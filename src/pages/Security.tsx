@@ -43,11 +43,11 @@ const Security = () => {
       />
 
       {/* Threat landscape — surprise data block */}
-      <section className="py-20 px-6 relative z-10">
+      <section className="py-14 sm:py-16 md:py-20 px-4 sm:px-6 relative z-10">
         <div className="container mx-auto max-w-5xl">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-12">
-            <p className="text-sm font-mono text-fire uppercase tracking-widest mb-2">◢ Threat Landscape ◣</p>
-            <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground">Why this <span className="serif-italic fire-text">matters</span></h2>
+            <p className="text-xs sm:text-sm font-mono text-fire uppercase tracking-widest mb-2 text-etched">◢ Threat Landscape ◣</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold text-3d">Why this <span className="serif-italic fire-text">matters</span></h2>
           </motion.div>
           <div className="grid md:grid-cols-3 gap-6">
             {threats.map((t, i) => (
@@ -64,11 +64,11 @@ const Security = () => {
       <SectionDivider />
 
       {/* Pillars */}
-      <section className="py-24 px-6 relative z-10">
+      <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 relative z-10">
         <div className="container mx-auto max-w-6xl">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-14">
-            <p className="text-sm font-mono text-water uppercase tracking-widest mb-2">◢ Our Approach ◣</p>
-            <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground">Eight security <span className="serif-italic water-text">pillars</span></h2>
+            <p className="text-xs sm:text-sm font-mono text-water uppercase tracking-widest mb-2 text-etched">◢ Our Approach ◣</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold text-3d">Eight security <span className="serif-italic water-text">pillars</span></h2>
           </motion.div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -88,11 +88,11 @@ const Security = () => {
       <SectionDivider />
 
       {/* Network Security Deep Dive */}
-      <section className="py-24 px-6 relative z-10">
+      <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 relative z-10">
         <div className="container mx-auto max-w-6xl">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-12">
-            <p className="text-sm font-mono text-water uppercase tracking-widest mb-2">◢ Network Security ◣</p>
-            <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground">
+            <p className="text-xs sm:text-sm font-mono text-water uppercase tracking-widest mb-2 text-etched">◢ Network Security ◣</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold text-3d">
               The network is the <span className="serif-italic water-text">first wall</span>
             </h2>
             <p className="text-muted-foreground mt-4 max-w-2xl mx-auto leading-relaxed">
@@ -125,11 +125,11 @@ const Security = () => {
       <SectionDivider />
 
       {/* Process */}
-      <section className="py-24 px-6 relative z-10">
+      <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 relative z-10">
         <div className="container mx-auto max-w-5xl">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-14">
-            <p className="text-sm font-mono text-fire uppercase tracking-widest mb-2">◢ How It Works ◣</p>
-            <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground">Security engagement <span className="serif-italic fire-text">process</span></h2>
+            <p className="text-xs sm:text-sm font-mono text-fire uppercase tracking-widest mb-2 text-etched">◢ How It Works ◣</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold text-3d">Security engagement <span className="serif-italic fire-text">process</span></h2>
           </motion.div>
 
 
@@ -152,12 +152,12 @@ const Security = () => {
       <SectionDivider />
 
       {/* Trust block */}
-      <section className="py-24 px-6 relative z-10">
+      <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 relative z-10">
         <div className="container mx-auto max-w-4xl">
           <motion.div className="glass-card p-10 md:p-14 text-center relative overflow-hidden" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <div className="absolute inset-0 grid-overlay opacity-20" />
             <div className="relative">
-              <h2 className="text-2xl md:text-4xl font-display font-bold text-foreground mb-4">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display font-bold text-3d mb-4">
                 Trust is earned through <span className="serif-italic water-text">transparency</span>
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-8 max-w-2xl mx-auto">

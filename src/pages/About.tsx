@@ -112,11 +112,11 @@ const About = () => {
       />
 
       {/* Mission / Manifesto */}
-      <section className="py-24 px-6 relative z-10">
+      <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 relative z-10">
         <div className="container mx-auto max-w-4xl text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-            <p className="text-sm font-mono text-water uppercase tracking-widest mb-2">◢ Our Manifesto ◣</p>
-            <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground mb-8 leading-tight">
+            <p className="text-xs sm:text-sm font-mono text-water uppercase tracking-widest mb-2 text-etched">◢ Our Manifesto ◣</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold text-3d mb-8 leading-tight">
               We build software the way <span className="serif-italic fire-text">it should be built</span> — and we refuse to apologise for it.
             </h2>
             <div className="space-y-5 text-muted-foreground text-lg leading-relaxed">
@@ -140,15 +140,15 @@ const About = () => {
       <SectionDivider />
 
       {/* Founder */}
-      <section className="py-24 px-6 relative z-10">
+      <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 relative z-10">
         <div className="container mx-auto max-w-5xl">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-14">
-            <p className="text-sm font-mono text-fire uppercase tracking-widest mb-2">◢ Leadership ◣</p>
-            <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground">Meet the <span className="serif-italic water-text">founder</span></h2>
+            <p className="text-xs sm:text-sm font-mono text-fire uppercase tracking-widest mb-2 text-etched">◢ Leadership ◣</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold text-3d">Meet the <span className="serif-italic water-text">founder</span></h2>
           </motion.div>
           <motion.div className="glass-card p-8 md:p-12 grid md:grid-cols-2 gap-10" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <div>
-              <p className="text-sm font-mono text-water uppercase tracking-widest mb-2">Founder & Lead Computer Scientist</p>
+              <p className="text-xs sm:text-sm font-mono text-water uppercase tracking-widest mb-2 text-etched">Founder & Lead Computer Scientist</p>
               <h3 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Mugisha Gordon</h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 Mugisha Gordon is the founder and lead computer scientist at Cosmos 8. With years of hands-on experience
@@ -173,11 +173,11 @@ const About = () => {
       <SectionDivider />
 
       {/* Values */}
-      <section className="py-24 px-6 relative z-10">
+      <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 relative z-10">
         <div className="container mx-auto max-w-6xl">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-14">
-            <p className="text-sm font-mono text-water uppercase tracking-widest mb-2">◢ Our Foundation ◣</p>
-            <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground">Six <span className="serif-italic fire-text">core values</span></h2>
+            <p className="text-xs sm:text-sm font-mono text-water uppercase tracking-widest mb-2 text-etched">◢ Our Foundation ◣</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold text-3d">Six <span className="serif-italic fire-text">core values</span></h2>
             <p className="text-muted-foreground mt-4 max-w-xl mx-auto">The principles every engagement, every commit, and every conversation is filtered through.</p>
           </motion.div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -197,14 +197,14 @@ const About = () => {
       <SectionDivider />
 
       {/* Orbit + Where We Stand */}
-      <section className="py-24 px-6 relative z-10">
+      <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 relative z-10">
         <div className="container mx-auto max-w-6xl grid md:grid-cols-2 gap-16 items-center">
           <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} className="flex justify-center">
             <OrbitGraphic className="w-[300px] md:w-[400px]" />
           </motion.div>
           <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-            <p className="text-sm font-mono text-fire uppercase tracking-widest mb-2">◢ Where We Stand ◣</p>
-            <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground mb-6">
+            <p className="text-xs sm:text-sm font-mono text-fire uppercase tracking-widest mb-2 text-etched">◢ Where We Stand ◣</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold text-3d mb-6">
               Rooted in <span className="serif-italic water-text">Kampala.</span><br/>Reaching <span className="serif-italic fire-text">everywhere.</span>
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
@@ -223,11 +223,11 @@ const About = () => {
       <SectionDivider />
 
       {/* Timeline */}
-      <section className="py-24 px-6 relative z-10">
+      <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 relative z-10">
         <div className="container mx-auto max-w-4xl">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-14">
-            <p className="text-sm font-mono text-fire uppercase tracking-widest mb-2">◢ Our Journey ◣</p>
-            <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground">A <span className="serif-italic nexus-text">timeline</span> of milestones</h2>
+            <p className="text-xs sm:text-sm font-mono text-fire uppercase tracking-widest mb-2 text-etched">◢ Our Journey ◣</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold text-3d">A <span className="serif-italic nexus-text">timeline</span> of milestones</h2>
           </motion.div>
           <div className="relative">
             <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-water via-nexus to-fire" />

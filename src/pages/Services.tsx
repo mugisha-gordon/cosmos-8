@@ -71,11 +71,11 @@ const Services = () => {
       <MarqueeBand items={stack} />
 
       {/* Services Grid */}
-      <section className="py-24 px-6 relative z-10">
+      <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 relative z-10">
         <div className="container mx-auto max-w-6xl">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-14">
-            <p className="text-sm font-mono text-water uppercase tracking-widest mb-2">◢ The Catalogue ◣</p>
-            <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground">Six <span className="serif-italic fire-text">disciplines</span>, one standard.</h2>
+            <p className="text-xs sm:text-sm font-mono text-water uppercase tracking-widest mb-2 text-etched">◢ The Catalogue ◣</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold text-3d">Six <span className="serif-italic fire-text">disciplines</span>, one standard.</h2>
           </motion.div>
           <div className="space-y-8">
             {services.map((service, i) => (
@@ -119,11 +119,11 @@ const Services = () => {
       <SectionDivider />
 
       {/* Networking Deep Dive */}
-      <section className="py-24 px-6 relative z-10">
+      <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 relative z-10">
         <div className="container mx-auto max-w-6xl">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-12">
-            <p className="text-sm font-mono text-water uppercase tracking-widest mb-2">◢ Networking Deep Dive ◣</p>
-            <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground">
+            <p className="text-xs sm:text-sm font-mono text-water uppercase tracking-widest mb-2 text-etched">◢ Networking Deep Dive ◣</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold text-3d">
               Networks that <span className="serif-italic water-text">never blink</span>
             </h2>
             <p className="text-muted-foreground mt-4 max-w-2xl mx-auto leading-relaxed">
@@ -156,11 +156,11 @@ const Services = () => {
       <SectionDivider />
 
       {/* Cybersecurity Deep Dive */}
-      <section className="py-24 px-6 relative z-10">
+      <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 relative z-10">
         <div className="container mx-auto max-w-6xl">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-12">
-            <p className="text-sm font-mono text-fire uppercase tracking-widest mb-2">◢ Cybersecurity Deep Dive ◣</p>
-            <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground">
+            <p className="text-xs sm:text-sm font-mono text-fire uppercase tracking-widest mb-2 text-etched">◢ Cybersecurity Deep Dive ◣</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold text-3d">
               Defence in <span className="serif-italic fire-text">depth</span>, not theatre
             </h2>
             <p className="text-muted-foreground mt-4 max-w-2xl mx-auto leading-relaxed">
@@ -205,11 +205,11 @@ const Services = () => {
       <SectionDivider />
 
       {/* Process */}
-      <section className="py-24 px-6 relative z-10">
+      <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 relative z-10">
         <div className="container mx-auto max-w-5xl">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-14">
-            <p className="text-sm font-mono text-water uppercase tracking-widest mb-2">◢ How We Work ◣</p>
-            <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground">A six-step <span className="serif-italic water-text">process</span></h2>
+            <p className="text-xs sm:text-sm font-mono text-water uppercase tracking-widest mb-2 text-etched">◢ How We Work ◣</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold text-3d">A six-step <span className="serif-italic water-text">process</span></h2>
             <p className="text-muted-foreground mt-4 max-w-xl mx-auto">A structured, proven approach that ensures quality and transparency at every stage of the engagement.</p>
           </motion.div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -234,11 +234,11 @@ const Services = () => {
       <SectionDivider />
 
       {/* Engagement Models */}
-      <section className="py-24 px-6 relative z-10">
+      <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 relative z-10">
         <div className="container mx-auto max-w-5xl">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-14">
-            <p className="text-sm font-mono text-fire uppercase tracking-widest mb-2">◢ Engagement Models ◣</p>
-            <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground">Pick your <span className="serif-italic fire-text">shape</span></h2>
+            <p className="text-xs sm:text-sm font-mono text-fire uppercase tracking-widest mb-2 text-etched">◢ Engagement Models ◣</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold text-3d">Pick your <span className="serif-italic fire-text">shape</span></h2>
           </motion.div>
           <div className="grid md:grid-cols-3 gap-6">
             {[
@@ -259,10 +259,10 @@ const Services = () => {
       <SectionDivider />
 
       {/* CTA */}
-      <section className="py-24 px-6 relative z-10">
+      <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 relative z-10">
         <div className="container mx-auto max-w-3xl text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-            <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold text-3d mb-6">
               Have a project in <span className="serif-italic nexus-text">mind?</span>
             </h2>
             <p className="text-muted-foreground mb-8 max-w-lg mx-auto text-lg">

@@ -62,7 +62,7 @@ const Projects = () => {
       />
 
       {/* Filter + Grid */}
-      <section className="py-16 px-6 relative z-10">
+      <section className="py-12 sm:py-14 md:py-16 px-4 sm:px-6 relative z-10">
         <div className="container mx-auto max-w-6xl">
           <div className="flex justify-center gap-3 mb-10 flex-wrap">
             {categories.map((cat) => (
@@ -126,11 +126,11 @@ const Projects = () => {
       <SectionDivider />
 
       {/* Reactor Specs — surprise stat block */}
-      <section className="py-24 px-6 relative z-10">
+      <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 relative z-10">
         <div className="container mx-auto max-w-5xl">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-12">
-            <p className="text-sm font-mono text-fire uppercase tracking-widest mb-2">◢ Reactor Specs ◣</p>
-            <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground">By the <span className="serif-italic water-text">numbers</span></h2>
+            <p className="text-xs sm:text-sm font-mono text-fire uppercase tracking-widest mb-2 text-etched">◢ Reactor Specs ◣</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold text-3d">By the <span className="serif-italic water-text">numbers</span></h2>
           </motion.div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
@@ -151,13 +151,13 @@ const Projects = () => {
       <SectionDivider />
 
       {/* Approach */}
-      <section className="py-24 px-6 relative z-10">
+      <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 relative z-10">
         <div className="container mx-auto max-w-4xl">
           <motion.div className="glass-card p-10 md:p-14 text-center relative overflow-hidden" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <div className="absolute -top-24 -left-24 w-64 h-64 bg-water/10 rounded-full blur-3xl" />
             <div className="absolute -bottom-24 -right-24 w-64 h-64 bg-fire/10 rounded-full blur-3xl" />
             <div className="relative">
-              <h2 className="text-2xl md:text-4xl font-display font-bold text-foreground mb-6">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display font-bold text-3d mb-6">
                 Every project follows our <span className="serif-italic fire-text">standard</span>
               </h2>
               <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-6">
