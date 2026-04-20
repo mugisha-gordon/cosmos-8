@@ -36,10 +36,10 @@ const Contact = () => {
       />
 
       {/* Contact Cards */}
-      <section className="py-20 px-6 relative z-10">
+      <section className="py-14 sm:py-16 md:py-20 px-4 sm:px-6 relative z-10">
         <div className="container mx-auto max-w-5xl">
           <div className="grid md:grid-cols-3 gap-6 mb-16">
-            <motion.div className="glass-card p-8 text-center thermal-glow" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+            <motion.div className="glass-card p-6 sm:p-8 text-center thermal-glow" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
               <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-muted mb-4">
                 <Phone size={24} className="text-water" />
               </div>
@@ -53,7 +53,7 @@ const Contact = () => {
               </button>
             </motion.div>
 
-            <motion.a href="https://wa.me/256765181438" target="_blank" rel="noopener noreferrer" className="glass-card p-8 text-center thermal-glow" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} viewport={{ once: true }}>
+            <motion.a href="https://wa.me/256765181438" target="_blank" rel="noopener noreferrer" className="glass-card p-6 sm:p-8 text-center thermal-glow" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} viewport={{ once: true }}>
               <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-muted mb-4">
                 <MessageCircle size={24} className="text-[#25D366]" />
               </div>
@@ -62,7 +62,7 @@ const Contact = () => {
               <p className="text-xs text-muted-foreground/60 mt-2">Tap to open WhatsApp</p>
             </motion.a>
 
-            <motion.div className="glass-card p-8 text-center thermal-glow" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} viewport={{ once: true }}>
+            <motion.div className="glass-card p-6 sm:p-8 text-center thermal-glow" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} viewport={{ once: true }}>
               <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-muted mb-4">
                 <Mail size={24} className="text-fire" />
               </div>
@@ -75,10 +75,10 @@ const Contact = () => {
           </div>
 
           {/* Info + Orbit */}
-          <motion.div className="glass-card p-10 md:p-14 grid md:grid-cols-2 gap-10 items-center" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+          <motion.div className="glass-card p-6 sm:p-8 md:p-12 lg:p-14 grid md:grid-cols-2 gap-10 items-center" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <div>
-              <p className="text-sm font-mono text-water uppercase tracking-widest mb-2">◢ How We Engage ◣</p>
-              <h2 className="text-2xl md:text-4xl font-display font-bold text-foreground mb-6">
+              <p className="text-xs sm:text-sm font-mono text-water uppercase tracking-widest mb-2 text-etched">◢ How We Engage ◣</p>
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display font-bold text-3d mb-6">
                 The first <span className="serif-italic fire-text">conversation</span> is on us
               </h2>
               <div className="space-y-5">
@@ -115,11 +115,11 @@ const Contact = () => {
       <SectionDivider />
 
       {/* FAQ */}
-      <section className="py-24 px-6 relative z-10">
+      <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 relative z-10">
         <div className="container mx-auto max-w-4xl">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-12">
-            <p className="text-sm font-mono text-fire uppercase tracking-widest mb-2">◢ Quick Questions ◣</p>
-            <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground">Frequently <span className="serif-italic water-text">asked</span></h2>
+            <p className="text-xs sm:text-sm font-mono text-fire uppercase tracking-widest mb-2 text-etched">◢ Quick Questions ◣</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold text-3d">Frequently <span className="serif-italic water-text">asked</span></h2>
           </motion.div>
           <div className="grid md:grid-cols-2 gap-6">
             {faqs.map((f, i) => (

@@ -71,7 +71,7 @@ const Index = () => {
       <MarqueeBand items={industries} />
 
       {/* Why Cosmos 8 */}
-      <section className="py-24 px-6 relative z-10">
+      <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 relative z-10">
         <Constellation className="absolute inset-0 w-full h-full opacity-50" />
         <div className="container mx-auto max-w-6xl relative">
           <motion.div
@@ -81,8 +81,8 @@ const Index = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <p className="text-sm font-mono text-water uppercase tracking-widest mb-2">◢ Why Choose Us ◣</p>
-            <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground mb-4">
+            <p className="text-xs sm:text-sm font-mono text-water uppercase tracking-widest mb-2 text-etched">◢ Why Choose Us ◣</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold text-3d mb-4">
               Technology That <span className="serif-italic fire-text">Delivers</span>
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
@@ -96,7 +96,7 @@ const Index = () => {
             {highlights.map((item, i) => (
               <motion.div
                 key={item.title}
-                className="glass-card p-8 thermal-glow group relative"
+                className="glass-card p-6 sm:p-8 thermal-glow group relative"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.08, duration: 0.5 }}
@@ -117,9 +117,9 @@ const Index = () => {
       <SectionDivider />
 
       {/* Stats */}
-      <section className="py-20 px-6 relative z-10">
+      <section className="py-14 sm:py-16 md:py-20 px-4 sm:px-6 relative z-10">
         <div className="container mx-auto max-w-5xl">
-          <div className="glass-card p-10 md:p-14 relative overflow-hidden">
+          <div className="glass-card p-6 sm:p-8 md:p-12 lg:p-14 relative overflow-hidden">
             <div className="absolute -top-20 -right-20 w-60 h-60 bg-fire/10 rounded-full blur-3xl" />
             <div className="absolute -bottom-20 -left-20 w-60 h-60 bg-water/10 rounded-full blur-3xl" />
             <div className="relative grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -132,7 +132,7 @@ const Index = () => {
                   transition={{ delay: i * 0.1, duration: 0.4 }}
                   viewport={{ once: true }}
                 >
-                  <p className="text-4xl md:text-6xl font-display font-bold nexus-text">{stat.value}</p>
+                  <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold nexus-text">{stat.value}</p>
                   <p className="text-sm text-muted-foreground mt-2 font-mono uppercase tracking-widest">{stat.label}</p>
                 </motion.div>
               ))}
@@ -144,7 +144,7 @@ const Index = () => {
       <SectionDivider />
 
       {/* About preview with orbit graphic */}
-      <section className="py-24 px-6 relative z-10">
+      <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 relative z-10">
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <motion.div
@@ -153,8 +153,8 @@ const Index = () => {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <p className="text-sm font-mono text-fire uppercase tracking-widest mb-2">◢ About Cosmos 8 ◣</p>
-              <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground mb-6">
+              <p className="text-xs sm:text-sm font-mono text-fire uppercase tracking-widest mb-2 text-etched">◢ About Cosmos 8 ◣</p>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold text-3d mb-6">
                 Engineering excellence, <span className="serif-italic water-text">since day one.</span>
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
@@ -193,7 +193,7 @@ const Index = () => {
       <SectionDivider />
 
       {/* Testimonials */}
-      <section className="py-24 px-6 relative z-10">
+      <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 relative z-10">
         <div className="container mx-auto max-w-6xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -201,8 +201,8 @@ const Index = () => {
             viewport={{ once: true }}
             className="text-center mb-14"
           >
-            <p className="text-sm font-mono text-water uppercase tracking-widest mb-2">◢ Voices From The Field ◣</p>
-            <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground">
+            <p className="text-xs sm:text-sm font-mono text-water uppercase tracking-widest mb-2 text-etched">◢ Voices From The Field ◣</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold text-3d">
               What our <span className="serif-italic fire-text">clients</span> say
             </h2>
           </motion.div>
@@ -210,7 +210,7 @@ const Index = () => {
             {testimonials.map((t, i) => (
               <motion.div
                 key={i}
-                className="glass-card p-8 relative"
+                className="glass-card p-6 sm:p-8 relative"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.1 }}
@@ -232,7 +232,7 @@ const Index = () => {
       <SectionDivider />
 
       {/* CTA */}
-      <section className="py-24 px-6 relative z-10">
+      <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 relative z-10">
         <div className="container mx-auto max-w-4xl text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -240,7 +240,7 @@ const Index = () => {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-6xl font-display font-bold text-foreground mb-6 leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-display font-bold text-3d mb-6 leading-tight">
               Ready to build something <span className="nexus-text serif-italic">extraordinary?</span>
             </h2>
             <p className="text-muted-foreground max-w-xl mx-auto mb-10 leading-relaxed text-lg">
