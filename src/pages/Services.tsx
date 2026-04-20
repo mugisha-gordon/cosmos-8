@@ -81,7 +81,7 @@ const Services = () => {
             {services.map((service, i) => (
               <motion.div
                 key={service.title}
-                className="glass-card p-8 md:p-10 thermal-glow"
+                className="glass-card p-6 sm:p-8 md:p-10 thermal-glow"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.05 }}
@@ -246,7 +246,7 @@ const Services = () => {
               { title: "Retainer", desc: "A reserved block of senior engineering hours each month for ongoing work, support, and strategic improvements.", tag: "BEST FOR GROWTH" },
               { title: "Embedded Team", desc: "We integrate fully with your in-house team — daily stand-ups, your tools, your sprint cadence — for the duration of the engagement.", tag: "BEST FOR SCALE" },
             ].map((m, i) => (
-              <motion.div key={m.title} className="glass-card p-8 thermal-glow" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.1 }} viewport={{ once: true }}>
+              <motion.div key={m.title} className="glass-card p-6 sm:p-8 thermal-glow" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.1 }} viewport={{ once: true }}>
                 <span className="font-mono text-xs text-water tracking-widest">{m.tag}</span>
                 <h3 className="font-display font-semibold text-foreground text-2xl mt-2 mb-3">{m.title}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">{m.desc}</p>

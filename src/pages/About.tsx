@@ -146,7 +146,7 @@ const About = () => {
             <p className="text-xs sm:text-sm font-mono text-fire uppercase tracking-widest mb-2 text-etched">◢ Leadership ◣</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold text-3d">Meet the <span className="serif-italic water-text">founder</span></h2>
           </motion.div>
-          <motion.div className="glass-card p-8 md:p-12 grid md:grid-cols-2 gap-10" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+          <motion.div className="glass-card p-6 sm:p-8 md:p-12 grid md:grid-cols-2 gap-10" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <div>
               <p className="text-xs sm:text-sm font-mono text-water uppercase tracking-widest mb-2 text-etched">Founder & Lead Computer Scientist</p>
               <h3 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Mugisha Gordon</h3>

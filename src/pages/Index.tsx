@@ -96,7 +96,7 @@ const Index = () => {
             {highlights.map((item, i) => (
               <motion.div
                 key={item.title}
-                className="glass-card p-8 thermal-glow group relative"
+                className="glass-card p-6 sm:p-8 thermal-glow group relative"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.08, duration: 0.5 }}
@@ -119,7 +119,7 @@ const Index = () => {
       {/* Stats */}
       <section className="py-14 sm:py-16 md:py-20 px-4 sm:px-6 relative z-10">
         <div className="container mx-auto max-w-5xl">
-          <div className="glass-card p-10 md:p-14 relative overflow-hidden">
+          <div className="glass-card p-6 sm:p-8 md:p-12 lg:p-14 relative overflow-hidden">
             <div className="absolute -top-20 -right-20 w-60 h-60 bg-fire/10 rounded-full blur-3xl" />
             <div className="absolute -bottom-20 -left-20 w-60 h-60 bg-water/10 rounded-full blur-3xl" />
             <div className="relative grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -210,7 +210,7 @@ const Index = () => {
             {testimonials.map((t, i) => (
               <motion.div
                 key={i}
-                className="glass-card p-8 relative"
+                className="glass-card p-6 sm:p-8 relative"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.1 }}

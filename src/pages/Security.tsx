@@ -51,7 +51,7 @@ const Security = () => {
           </motion.div>
           <div className="grid md:grid-cols-3 gap-6">
             {threats.map((t, i) => (
-              <motion.div key={t.name} className="glass-card p-8 thermal-glow" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.1 }} viewport={{ once: true }}>
+              <motion.div key={t.name} className="glass-card p-6 sm:p-8 thermal-glow" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.1 }} viewport={{ once: true }}>
                 <p className="font-mono text-xs text-fire uppercase tracking-widest mb-3">{t.name}</p>
                 <p className="text-5xl font-display font-bold nexus-text mb-3">{t.stat}</p>
                 <p className="text-sm text-muted-foreground leading-relaxed">{t.desc}</p>
@@ -154,7 +154,7 @@ const Security = () => {
       {/* Trust block */}
       <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 relative z-10">
         <div className="container mx-auto max-w-4xl">
-          <motion.div className="glass-card p-10 md:p-14 text-center relative overflow-hidden" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+          <motion.div className="glass-card p-6 sm:p-8 md:p-12 lg:p-14 text-center relative overflow-hidden" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <div className="absolute inset-0 grid-overlay opacity-20" />
             <div className="relative">
               <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display font-bold text-3d mb-4">

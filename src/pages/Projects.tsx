@@ -153,7 +153,7 @@ const Projects = () => {
       {/* Approach */}
       <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 relative z-10">
         <div className="container mx-auto max-w-4xl">
-          <motion.div className="glass-card p-10 md:p-14 text-center relative overflow-hidden" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+          <motion.div className="glass-card p-6 sm:p-8 md:p-12 lg:p-14 text-center relative overflow-hidden" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <div className="absolute -top-24 -left-24 w-64 h-64 bg-water/10 rounded-full blur-3xl" />
             <div className="absolute -bottom-24 -right-24 w-64 h-64 bg-fire/10 rounded-full blur-3xl" />
             <div className="relative">
