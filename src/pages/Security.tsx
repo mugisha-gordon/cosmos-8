@@ -124,8 +124,14 @@ const Security = () => {
 
       <SectionDivider />
 
+      {/* Process */}
+      <section className="py-24 px-6 relative z-10">
+        <div className="container mx-auto max-w-5xl">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-14">
+            <p className="text-sm font-mono text-fire uppercase tracking-widest mb-2">◢ How It Works ◣</p>
             <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground">Security engagement <span className="serif-italic fire-text">process</span></h2>
           </motion.div>
+
 
           <div className="space-y-6">
             {securityProcess.map((step, i) => (
