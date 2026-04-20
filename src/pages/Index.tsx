@@ -85,7 +85,7 @@ const Index = () => {
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold text-3d mb-4">
               Technology That <span className="serif-italic fire-text">Delivers</span>
             </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            <p className="text-foreground/90 max-w-2xl mx-auto leading-relaxed text-textured">
               At Cosmos 8, we don't just build software—we engineer solutions that withstand the test of time.
               Every line of code is crafted with precision, every system designed for resilience, every deployment
               hardened against the realities of production.

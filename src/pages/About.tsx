@@ -119,7 +119,7 @@ const About = () => {
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold text-3d mb-8 leading-tight">
               We build software the way <span className="serif-italic fire-text">it should be built</span> — and we refuse to apologise for it.
             </h2>
-            <div className="space-y-5 text-muted-foreground text-lg leading-relaxed">
+            <div className="space-y-5 text-foreground text-lg leading-relaxed text-textured">
               <p>
                 The technology industry has a quiet crisis: software shipped half-finished, networks held together with hope,
                 and security treated as a checkbox. Cosmos 8 exists because that approach is unacceptable when real businesses,
