@@ -116,6 +116,9 @@
 
   html {
     scroll-behavior: smooth;
+    /* Fluid root font: 14px on tiny phones → 17px on large desktops */
+    font-size: clamp(14px, 0.875rem + 0.25vw, 17px);
+    -webkit-text-size-adjust: 100%;
   }
 
   body {
@@ -123,7 +126,16 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     transition: background-color 0.6s ease, color 0.6s ease;
+    overflow-x: hidden;
   }
+
+  /* Prevent long words / URLs from breaking layout on small screens */
+  h1, h2, h3, h4, h5, h6, p, a, span, li {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  img, video, svg, canvas { max-width: 100%; height: auto; }
 }
 
 @layer components {
