@@ -12,7 +12,7 @@ interface PageHeroProps {
 
 const PageHero = ({ bgImage, eyebrow, title, subtitle, alt = "", children }: PageHeroProps) => {
   return (
-    <section className="relative min-h-[70vh] sm:min-h-[80vh] flex items-center justify-center px-4 sm:px-6 py-20 sm:py-24 overflow-hidden">
+    <section className="relative min-h-[70vh] sm:min-h-[80vh] flex items-center justify-center px-4 sm:px-6 py-20 sm:py-24 overflow-hidden hero-light-invert">
       {/* Background image — overlays only in dark theme; light theme shows raw image */}
       <div className="absolute inset-0 z-0">
         <img
