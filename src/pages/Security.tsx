@@ -87,11 +87,43 @@ const Security = () => {
 
       <SectionDivider />
 
-      {/* Process */}
+      {/* Network Security Deep Dive */}
       <section className="py-24 px-6 relative z-10">
-        <div className="container mx-auto max-w-5xl">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-14">
-            <p className="text-sm font-mono text-fire uppercase tracking-widest mb-2">◢ How It Works ◣</p>
+        <div className="container mx-auto max-w-6xl">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-12">
+            <p className="text-sm font-mono text-water uppercase tracking-widest mb-2">◢ Network Security ◣</p>
+            <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground">
+              The network is the <span className="serif-italic water-text">first wall</span>
+            </h2>
+            <p className="text-muted-foreground mt-4 max-w-2xl mx-auto leading-relaxed">
+              Most attacks travel over the wire long before they touch a keyboard. Cosmos 8 treats network security as the foundation — not an afterthought bolted onto a flat, trusting LAN. We segment, encrypt, monitor, and verify, so a compromised device never becomes a compromised company.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              { title: "Network Segmentation", desc: "VLAN isolation between user, server, IoT, guest, and management traffic so one compromised printer can't reach your finance database." },
+              { title: "Next-Gen Firewalls", desc: "Stateful inspection, deep packet inspection, geo-blocking, and IPS rules tuned for your traffic — not factory defaults that let everything through." },
+              { title: "Wi-Fi Security", desc: "WPA3-Enterprise with RADIUS authentication, rogue AP detection, client isolation on guest SSIDs, and certificate-based onboarding." },
+              { title: "Zero-Trust Network Access", desc: "Replace flat VPNs with identity-aware access — every connection authenticated, every session short-lived, every device posture-checked." },
+              { title: "Encrypted Tunnels", desc: "Site-to-site IPsec and WireGuard mesh networks for branch offices and remote staff. No more sensitive data crossing the public internet in the clear." },
+              { title: "Network Detection & Response", desc: "Suricata and Zeek-based traffic analysis with custom rules tuned to your environment, alerting on lateral movement and command-and-control beacons." },
+              { title: "DNS Filtering", desc: "Recursive DNS protection (Pi-hole, Cloudflare Gateway, NextDNS) blocking phishing, malware C2, and adult content at the resolver layer." },
+              { title: "Patch & Firmware Management", desc: "Scheduled updates for routers, switches, APs, and firewalls — the silent half of network security that almost everyone forgets." },
+              { title: "Configuration Backups", desc: "Automated, versioned backups of every network device with diff alerting, so an unauthorised change is detected within minutes, not months." },
+            ].map((n, i) => (
+              <motion.div key={n.title} className="glass-card p-6 thermal-glow" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.05 }} viewport={{ once: true }}>
+                <span className="font-mono text-[10px] text-water tracking-widest">NS{String(i + 1).padStart(2, "0")}</span>
+                <h3 className="font-display font-semibold text-foreground mt-2 mb-2">{n.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{n.desc}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <SectionDivider />
+
             <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground">Security engagement <span className="serif-italic fire-text">process</span></h2>
           </motion.div>
 
