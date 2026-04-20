@@ -13,7 +13,7 @@ interface PageHeroProps {
 const PageHero = ({ bgImage, eyebrow, title, subtitle, alt = "", children }: PageHeroProps) => {
   return (
     <section className="relative min-h-[70vh] sm:min-h-[80vh] flex items-center justify-center px-4 sm:px-6 py-20 sm:py-24 overflow-hidden">
-      {/* Background image */}
+      {/* Background image — overlays only in dark theme; light theme shows raw image */}
       <div className="absolute inset-0 z-0">
         <img
           src={bgImage}
@@ -22,11 +22,11 @@ const PageHero = ({ bgImage, eyebrow, title, subtitle, alt = "", children }: Pag
           width={1920}
           height={1080}
         />
-        {/* Layered gradients for legibility in both themes */}
-        <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background" />
-        <div className="absolute inset-0 bg-gradient-to-r from-water/10 via-transparent to-fire/10" />
-        <div className="absolute inset-0 grid-overlay opacity-40" />
-        <div className="noise-overlay" />
+        {/* Dark-only overlays for legibility */}
+        <div className="hidden dark:block absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background" />
+        <div className="hidden dark:block absolute inset-0 bg-gradient-to-r from-water/10 via-transparent to-fire/10" />
+        <div className="hidden dark:block absolute inset-0 grid-overlay opacity-40" />
+        <div className="hidden dark:block noise-overlay" />
       </div>
 
       {/* Corner brackets — surprise detail */}
@@ -35,14 +35,9 @@ const PageHero = ({ bgImage, eyebrow, title, subtitle, alt = "", children }: Pag
       <div className="absolute bottom-10 left-6 md:left-10 w-10 h-10 border-l-2 border-b-2 border-fire/60 z-10" />
       <div className="absolute bottom-10 right-6 md:right-10 w-10 h-10 border-r-2 border-b-2 border-water/60 z-10" />
 
-      {/* Coordinates marker — hidden on small screens to avoid clutter */}
-      <div className="hidden sm:block absolute top-24 left-1/2 -translate-x-1/2 z-10 font-mono text-[10px] text-muted-foreground tracking-widest opacity-70 whitespace-nowrap">
-        N 00°18'49" · E 32°34'52" · KAMPALA
-      </div>
-
       <div className="container mx-auto max-w-4xl text-center relative z-10">
         <motion.p
-          className="text-[10px] sm:text-xs md:text-sm font-mono text-fire uppercase tracking-[0.25em] sm:tracking-[0.3em] mb-4"
+          className="text-[10px] sm:text-xs md:text-sm font-mono text-fire dark:text-fire uppercase tracking-[0.25em] sm:tracking-[0.3em] mb-4"
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
