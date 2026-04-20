@@ -118,6 +118,92 @@ const Services = () => {
 
       <SectionDivider />
 
+      {/* Networking Deep Dive */}
+      <section className="py-24 px-6 relative z-10">
+        <div className="container mx-auto max-w-6xl">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-12">
+            <p className="text-sm font-mono text-water uppercase tracking-widest mb-2">◢ Networking Deep Dive ◣</p>
+            <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground">
+              Networks that <span className="serif-italic water-text">never blink</span>
+            </h2>
+            <p className="text-muted-foreground mt-4 max-w-2xl mx-auto leading-relaxed">
+              A network is the silent nervous system of every modern business. When it fails, everything stops — sales, support, security, sanity. Cosmos 8 designs, deploys, and defends networks engineered for the realities of African infrastructure: power dips, ISP churn, fibre cuts, and growth that arrives faster than budgets.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              { title: "Site Surveys & Heat Mapping", desc: "Professional Wi-Fi site surveys with predictive and post-installation heat maps. We measure signal, interference, and capacity — never guess." },
+              { title: "Structured Cabling", desc: "Cat6/6A and OS2 fibre installations to TIA-568 standards. Labelled, tested, certified, and documented so the next engineer thanks you." },
+              { title: "Enterprise Wi-Fi 6/6E", desc: "Mesh and controller-based deployments using MikroTik, Ubiquiti UniFi, Aruba Instant On, and Cisco Meraki — chosen by what your environment actually needs." },
+              { title: "Routing, Switching & VLANs", desc: "Layer-2/3 segmentation, VLAN design, OSPF/BGP where it earns its keep. Guest, IoT, voice, and admin traffic kept in their own lanes." },
+              { title: "Firewalls & VPN", desc: "Next-gen firewall configuration (FortiGate, pfSense, MikroTik), site-to-site IPsec tunnels, and WireGuard remote access for staff working from anywhere." },
+              { title: "ISP Failover & Load Balancing", desc: "Dual-WAN, SD-WAN-style failover, and intelligent load balancing so a single ISP outage no longer empties your office in five minutes." },
+              { title: "Network Monitoring (NOC)", desc: "Zabbix, LibreNMS, PRTG, and Grafana dashboards — real-time visibility into every link, switch, AP, and tunnel with intelligent paging when something matters." },
+              { title: "VoIP & Unified Comms", desc: "Asterisk, FreePBX, and 3CX deployments with QoS-tuned networks so calls stay crisp even when the office is streaming a webinar." },
+              { title: "Network Hardening & Audits", desc: "Configuration audits, port-security lockdowns, rogue-device detection, and policy reviews — closing the doors most networks leave open by default." },
+            ].map((n, i) => (
+              <motion.div key={n.title} className="glass-card p-6 thermal-glow" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.05 }} viewport={{ once: true }}>
+                <span className="font-mono text-[10px] text-water tracking-widest">N0{i + 1}</span>
+                <h3 className="font-display font-semibold text-foreground mt-2 mb-2">{n.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{n.desc}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <SectionDivider />
+
+      {/* Cybersecurity Deep Dive */}
+      <section className="py-24 px-6 relative z-10">
+        <div className="container mx-auto max-w-6xl">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-12">
+            <p className="text-sm font-mono text-fire uppercase tracking-widest mb-2">◢ Cybersecurity Deep Dive ◣</p>
+            <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground">
+              Defence in <span className="serif-italic fire-text">depth</span>, not theatre
+            </h2>
+            <p className="text-muted-foreground mt-4 max-w-2xl mx-auto leading-relaxed">
+              Most breaches in our region don't come from elite nation-state hackers — they come from a forgotten admin password, an unpatched router, a phishing email opened on a Monday morning. We build security programmes that answer real threats with real controls, not certificates on a wall.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            {[
+              { title: "Vulnerability Assessments", desc: "Authenticated and unauthenticated scans across your external surface, internal network, and cloud workloads using Nessus, OpenVAS, and Nuclei — followed by triage that separates noise from genuine risk." },
+              { title: "Penetration Testing", desc: "Black-box, grey-box, and white-box engagements covering web apps (OWASP Top 10), APIs, mobile apps, internal networks, and Wi-Fi. Every finding ships with proof, business impact, and a clear fix." },
+              { title: "Web & API Security", desc: "Hardening for the endpoints attackers love most: authentication, session handling, IDOR, SSRF, deserialisation, rate-limiting, and JWT misuse — backed by automated regression tests." },
+              { title: "Endpoint Protection (EDR)", desc: "Deployment and tuning of modern EDR (CrowdStrike, SentinelOne, Microsoft Defender for Business) with policy baselines, exclusions that don't open holes, and response runbooks." },
+              { title: "Email Security & Anti-Phishing", desc: "SPF, DKIM, and DMARC enforcement to stop spoofing of your own domain, plus phishing simulation campaigns and staff training that actually changes behaviour." },
+              { title: "Identity & Access Management", desc: "MFA rollouts, SSO integration (Google Workspace, Microsoft Entra), conditional access policies, privileged-access workstations, and quarterly access reviews." },
+              { title: "Cloud Security Posture", desc: "AWS, Azure, GCP, and Cloudflare audits using ScoutSuite and Prowler — IAM least-privilege, public-bucket detection, key rotation, and CIS benchmark alignment." },
+              { title: "Incident Response & Forensics", desc: "On-call IR retainers, breach containment playbooks, log forensics, and post-incident reports that satisfy boards, insurers, and regulators." },
+              { title: "Security Awareness Training", desc: "Engaging quarterly training in English and Luganda — phishing, password hygiene, social engineering, mobile safety, and the human side of security." },
+              { title: "Compliance & Policy", desc: "Policy authoring and gap analysis for ISO 27001, PCI-DSS, GDPR, and Uganda's Data Protection and Privacy Act — practical documents your team will actually follow." },
+            ].map((c, i) => (
+              <motion.div key={c.title} className="glass-card p-6 thermal-glow" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.05 }} viewport={{ once: true }}>
+                <div className="flex items-start gap-4">
+                  <span className="font-mono text-xs text-fire tracking-widest shrink-0 mt-1">C{String(i + 1).padStart(2, "0")}</span>
+                  <div>
+                    <h3 className="font-display font-semibold text-foreground mb-2">{c.title}</h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{c.desc}</p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mt-10 glass-card p-8 md:p-10 text-center">
+            <p className="font-mono text-xs text-water uppercase tracking-widest mb-3">◢ Our Stance ◣</p>
+            <p className="text-foreground font-display text-xl md:text-2xl leading-snug max-w-3xl mx-auto">
+              "Security is not a product you buy — it is a practice you maintain. We help you maintain it, week after week, until it's just how the company breathes."
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
+      <SectionDivider />
+
       {/* Process */}
       <section className="py-24 px-6 relative z-10">
         <div className="container mx-auto max-w-5xl">
