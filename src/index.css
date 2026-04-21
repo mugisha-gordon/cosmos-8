@@ -254,7 +254,7 @@
   /* Etched / engraved label text — single crisp 1px highlight, NO blur */
   .text-etched {
     color: hsl(var(--muted-foreground));
-    text-shadow: 1px 1px 0 hsl(var(--background));
+    text-shadow: none;
   }
 
   /* Rich paragraph — clean readable foreground, no shadow */
@@ -267,15 +267,15 @@
   :root .hero-light-invert h1,
   :root .hero-light-invert > div > p {
     color: hsl(30 50% 97%);
-    text-shadow: 0 2px 18px hsl(216 60% 8% / 0.55), 0 1px 2px hsl(216 60% 8% / 0.7);
+    text-shadow: none;
   }
   :root .hero-light-invert .text-muted-foreground {
     color: hsl(30 40% 92%) !important;
-    text-shadow: 0 1px 12px hsl(216 60% 8% / 0.6);
+    text-shadow: none;
   }
   :root .hero-light-invert .text-fire {
     color: hsl(28 100% 70%);
-    text-shadow: 0 1px 10px hsl(216 60% 8% / 0.55);
+    text-shadow: none;
   }
   .dark .hero-light-invert h1,
   .dark .hero-light-invert p {
