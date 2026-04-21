@@ -209,81 +209,40 @@
      ============================================================ */
 
   /* ============================================================
-     TRUE 3D TITLES — crisp 1px-step extrusion, ZERO blur
+     FLAT TITLES — zero shadow, pure color (per user request)
      ============================================================ */
 
-  /* Neutral 3D — extruded foreground */
   .text-3d {
     color: hsl(var(--foreground));
     letter-spacing: -0.015em;
-    text-shadow:
-      1px 1px 0 hsl(var(--foreground) / 0.85),
-      2px 2px 0 hsl(var(--foreground) / 0.75),
-      3px 3px 0 hsl(var(--foreground) / 0.65),
-      4px 4px 0 hsl(var(--foreground) / 0.55),
-      5px 5px 0 hsl(var(--foreground) / 0.45),
-      6px 6px 0 hsl(var(--foreground) / 0.35),
-      7px 7px 0 hsl(var(--foreground) / 0.25),
-      8px 8px 0 hsl(var(--foreground) / 0.15);
+    text-shadow: none;
   }
   .dark .text-3d {
-    text-shadow:
-      1px 1px 0 hsl(216 60% 4%),
-      2px 2px 0 hsl(216 60% 4%),
-      3px 3px 0 hsl(216 60% 4%),
-      4px 4px 0 hsl(216 60% 4%),
-      5px 5px 0 hsl(216 60% 4%),
-      6px 6px 0 hsl(216 60% 4%),
-      7px 7px 0 hsl(216 60% 4%),
-      8px 8px 0 hsl(216 60% 4%);
+    text-shadow: none;
   }
 
-  /* Fire 3D — molten orange face, dark-red extrusion */
   .text-3d-fire {
     color: hsl(var(--fire-glow));
     letter-spacing: -0.015em;
-    text-shadow:
-      1px 1px 0 hsl(12 80% 32%),
-      2px 2px 0 hsl(12 80% 28%),
-      3px 3px 0 hsl(12 80% 24%),
-      4px 4px 0 hsl(12 80% 20%),
-      5px 5px 0 hsl(12 80% 16%),
-      6px 6px 0 hsl(12 80% 12%),
-      7px 7px 0 hsl(12 80% 9%),
-      8px 8px 0 hsl(12 80% 6%);
+    text-shadow: none;
   }
 
-  /* Water 3D — cyan face, deep navy extrusion */
   .text-3d-water {
-    color: hsl(195 95% 65%);
+    color: hsl(195 95% 45%);
     letter-spacing: -0.015em;
-    text-shadow:
-      1px 1px 0 hsl(212 80% 24%),
-      2px 2px 0 hsl(212 80% 20%),
-      3px 3px 0 hsl(212 80% 17%),
-      4px 4px 0 hsl(212 80% 14%),
-      5px 5px 0 hsl(212 80% 11%),
-      6px 6px 0 hsl(212 80% 9%),
-      7px 7px 0 hsl(212 80% 7%),
-      8px 8px 0 hsl(212 80% 5%);
+    text-shadow: none;
+  }
+  .dark .text-3d-water {
+    color: hsl(195 95% 65%);
   }
 
-  /* Nexus 3D — gold face with deep-charcoal extrusion (the showpiece, no blur) */
   .text-3d-nexus {
     color: hsl(var(--nexus));
     letter-spacing: -0.015em;
-    text-shadow:
-      1px 1px 0 hsl(28 70% 30%),
-      2px 2px 0 hsl(20 70% 24%),
-      3px 3px 0 hsl(15 70% 18%),
-      4px 4px 0 hsl(12 70% 14%),
-      5px 5px 0 hsl(212 60% 12%),
-      6px 6px 0 hsl(212 70% 9%),
-      7px 7px 0 hsl(212 70% 7%),
-      8px 8px 0 hsl(212 70% 5%);
+    text-shadow: none;
   }
 
-  /* Textured body text — solid color + tactile noise overlay, NO blur */
+  /* Textured body text — solid color + tactile noise overlay, NO shadow */
   .text-textured {
     color: hsl(var(--foreground));
     position: relative;
