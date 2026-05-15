@@ -319,3 +319,37 @@
     to { transform: translateX(-50%); }
   }
 }
+
+@layer components {
+  /* Dramatic "Z" — italic, oversized, dual-gradient with a fiery underline slash */
+  .dramatic-z {
+    display: inline-block;
+    position: relative;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 1.18em;
+    line-height: 0.9;
+    transform: skewX(-12deg) translateY(0.02em);
+    padding: 0 0.04em;
+    background: linear-gradient(135deg,
+      hsl(var(--fire-glow)) 0%,
+      hsl(var(--fire)) 35%,
+      hsl(var(--nexus)) 55%,
+      hsl(var(--water)) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 2px 0 hsl(var(--fire) / 0.35));
+  }
+  .dramatic-z::after {
+    content: "";
+    position: absolute;
+    left: 6%;
+    right: 6%;
+    bottom: 0.08em;
+    height: 0.08em;
+    background: linear-gradient(90deg, hsl(var(--water)), hsl(var(--fire)));
+    border-radius: 999px;
+    opacity: 0.85;
+  }
+}
