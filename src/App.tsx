@@ -13,6 +13,7 @@ import Contact from "./pages/Contact.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import WhatsAppButton from "./components/WhatsAppButton.tsx";
 import BackToTopButton from "./components/BackToTopButton.tsx";
+import AIChatButton from "./components/AIChatButton.tsx";
 
 const queryClient = new QueryClient();
 
@@ -33,6 +34,7 @@ const App = () => (
             <Route path="*" element={<NotFound />} />
           </Routes>
           <BackToTopButton />
+          <AIChatButton />
           <WhatsAppButton />
         </BrowserRouter>
       </TooltipProvider>
