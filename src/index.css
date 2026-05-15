@@ -135,7 +135,14 @@
     word-wrap: break-word;
   }
 
+  html, body, #root { max-width: 100%; overflow-x: clip; }
   img, video, svg, canvas { max-width: 100%; height: auto; }
+  pre, code { max-width: 100%; overflow-x: auto; }
+  .container { max-width: 100% !important; }
+  @media (min-width: 640px) { .container { max-width: 640px !important; } }
+  @media (min-width: 768px) { .container { max-width: 768px !important; } }
+  @media (min-width: 1024px) { .container { max-width: 1024px !important; } }
+  @media (min-width: 1280px) { .container { max-width: 1280px !important; } }
 }
 
 @layer components {
