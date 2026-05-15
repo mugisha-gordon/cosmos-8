@@ -11,7 +11,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          COSMOS 8
+          COZMOS 8
         </motion.h1>
         <motion.p
           className="mt-4 text-lg sm:text-xl font-mono text-muted-foreground tracking-widest uppercase"

@@ -38,7 +38,7 @@ const Security = () => {
         bgImage={heroImg}
         eyebrow="Security Division · The Vault"
         title={<>Built to <span className="nexus-text">withstand</span></>}
-        subtitle="In a world of escalating cyber threats, Cosmos 8's security division provides the expertise and the tooling to protect your most valuable digital assets. Security isn't an afterthought here — it's embedded in everything we ship."
+        subtitle="In a world of escalating cyber threats, Cozmos 8's security division provides the expertise and the tooling to protect your most valuable digital assets. Security isn't an afterthought here — it's embedded in everything we ship."
         alt="Hexagonal cyber shield against digital rain"
       />
 
@@ -96,7 +96,7 @@ const Security = () => {
               The network is the <span className="serif-italic water-text">first wall</span>
             </h2>
             <p className="text-muted-foreground mt-4 max-w-2xl mx-auto leading-relaxed">
-              Most attacks travel over the wire long before they touch a keyboard. Cosmos 8 treats network security as the foundation — not an afterthought bolted onto a flat, trusting LAN. We segment, encrypt, monitor, and verify, so a compromised device never becomes a compromised company.
+              Most attacks travel over the wire long before they touch a keyboard. Cozmos 8 treats network security as the foundation — not an afterthought bolted onto a flat, trusting LAN. We segment, encrypt, monitor, and verify, so a compromised device never becomes a compromised company.
             </p>
           </motion.div>
 

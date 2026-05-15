@@ -29,7 +29,7 @@ const ContactFooter = () => {
             Let's Build Something
           </h2>
           <p className="text-muted-foreground mb-10 max-w-lg mx-auto">
-            Ready to bring your vision to life? Reach out to Cosmos 8 and let's engineer 
+            Ready to bring your vision to life? Reach out to Cozmos 8 and let's engineer 
             the future together.
           </p>
 
@@ -83,7 +83,7 @@ const ContactFooter = () => {
         </motion.div>
 
         <div className="mt-16 pt-8 border-t border-border/30 text-xs text-muted-foreground font-mono">
-          © {new Date().getFullYear()} Cosmos 8 — Tech. Done Right.
+          © {new Date().getFullYear()} Cozmos 8 — Tech. Done Right.
         </div>
       </div>
     </footer>

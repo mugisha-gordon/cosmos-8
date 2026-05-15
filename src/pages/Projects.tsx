@@ -161,7 +161,7 @@ const Projects = () => {
                 Every project follows our <span className="serif-italic fire-text">standard</span>
               </h2>
               <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-6">
-                No matter the size or scope, every Cosmos 8 project goes through our full engineering lifecycle:
+                No matter the size or scope, every Cozmos 8 project goes through our full engineering lifecycle:
                 architecture review, iterative development, comprehensive testing (including our 90-day standard),
                 and monitored deployment. We don't cut corners, and we won't pretend we did when we didn't.
               </p>

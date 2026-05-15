@@ -29,7 +29,7 @@ const industries = ["FINTECH", "EDUCATION", "LOGISTICS", "HEALTHCARE", "RETAIL",
 
 const testimonials = [
   {
-    quote: "Cosmos 8 didn't just deliver a product — they delivered confidence. Two years in, our platform still hasn't blinked.",
+    quote: "Cozmos 8 didn't just deliver a product — they delivered confidence. Two years in, our platform still hasn't blinked.",
     name: "Operations Director",
     org: "Logistics Group, Kampala",
   },
@@ -70,7 +70,7 @@ const Index = () => {
 
       <MarqueeBand items={industries} />
 
-      {/* Why Cosmos 8 */}
+      {/* Why Cozmos 8 */}
       <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 relative z-10">
         <Constellation className="absolute inset-0 w-full h-full opacity-50" />
         <div className="container mx-auto max-w-6xl relative">
@@ -86,7 +86,7 @@ const Index = () => {
               Technology That <span className="serif-italic fire-text">Delivers</span>
             </h2>
             <p className="text-foreground/90 max-w-2xl mx-auto leading-relaxed text-textured">
-              At Cosmos 8, we don't just build software—we engineer solutions that withstand the test of time.
+              At Cozmos 8, we don't just build software—we engineer solutions that withstand the test of time.
               Every line of code is crafted with precision, every system designed for resilience, every deployment
               hardened against the realities of production.
             </p>
@@ -153,12 +153,12 @@ const Index = () => {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <p className="text-xs sm:text-sm font-mono text-fire uppercase tracking-widest mb-2 text-etched">◢ About Cosmos 8 ◣</p>
+              <p className="text-xs sm:text-sm font-mono text-fire uppercase tracking-widest mb-2 text-etched">◢ About Cozmos 8 ◣</p>
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold text-3d mb-6">
                 Engineering excellence, <span className="serif-italic water-text">since day one.</span>
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Founded by Mugisha Gordon, Cosmos 8 was born from a singular vision: to deliver technology
+                Founded by Mugisha Gordon, Cozmos 8 was born from a singular vision: to deliver technology
                 solutions that are not just functional, but exceptional. Based in Kampala, Uganda, we serve
                 clients across East Africa and beyond — from startups shipping their first MVP to established
                 enterprises modernising decades of legacy infrastructure.
@@ -245,7 +245,7 @@ const Index = () => {
             </h2>
             <p className="text-muted-foreground max-w-xl mx-auto mb-10 leading-relaxed text-lg">
               Whether you need a custom application, a network overhaul, or a complete security audit —
-              Cosmos 8 has the expertise to make it happen. Let's talk.
+              Cozmos 8 has the expertise to make it happen. Let's talk.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link to="/contact" className="px-8 py-3 rounded-lg font-medium text-sm bg-primary text-primary-foreground hover:opacity-90 transition-opacity">

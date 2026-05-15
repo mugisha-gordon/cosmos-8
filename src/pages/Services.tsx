@@ -64,7 +64,7 @@ const Services = () => {
         bgImage={heroImg}
         eyebrow="Services · The Workshop"
         title={<>Services built for <span className="nexus-text">impact</span></>}
-        subtitle="From the first sketch on the whiteboard to the late-night production deploy, Cosmos 8 delivers end-to-end technology services. We combine deep technical expertise with a client-first approach to solve complex problems and build systems that endure."
+        subtitle="From the first sketch on the whiteboard to the late-night production deploy, Cozmos 8 delivers end-to-end technology services. We combine deep technical expertise with a client-first approach to solve complex problems and build systems that endure."
         alt="Glowing water and fire gears interlocking"
       />
 
@@ -127,7 +127,7 @@ const Services = () => {
               Networks that <span className="serif-italic water-text">never blink</span>
             </h2>
             <p className="text-muted-foreground mt-4 max-w-2xl mx-auto leading-relaxed">
-              A network is the silent nervous system of every modern business. When it fails, everything stops — sales, support, security, sanity. Cosmos 8 designs, deploys, and defends networks engineered for the realities of African infrastructure: power dips, ISP churn, fibre cuts, and growth that arrives faster than budgets.
+              A network is the silent nervous system of every modern business. When it fails, everything stops — sales, support, security, sanity. Cozmos 8 designs, deploys, and defends networks engineered for the realities of African infrastructure: power dips, ISP churn, fibre cuts, and growth that arrives faster than budgets.
             </p>
           </motion.div>
 

@@ -67,7 +67,7 @@ const FounderCard = () => {
               Mugisha Gordon
             </h2>
             <p className="text-muted-foreground leading-relaxed">
-              Lead Computer Scientist at Cosmos 8, specializing in building resilient, 
+              Lead Computer Scientist at Cozmos 8, specializing in building resilient, 
               production-grade applications. With deep expertise spanning mobile deployment, 
               reactive front-end architecture, and network security—every system is engineered 
               to perform under pressure.

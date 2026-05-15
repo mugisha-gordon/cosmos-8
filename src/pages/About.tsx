@@ -26,7 +26,7 @@ const values = [
 ];
 
 const timeline = [
-  { year: "2019", title: "The Beginning", desc: "Cosmos 8 was founded by Mugisha Gordon with a vision to deliver world-class technology from the heart of East Africa." },
+  { year: "2019", title: "The Beginning", desc: "Cozmos 8 was founded by Mugisha Gordon with a vision to deliver world-class technology from the heart of East Africa." },
   { year: "2020", title: "First Major Deployment", desc: "Launched Semkat, our flagship platform, proving that enterprise-grade software can be built locally and shipped reliably." },
   { year: "2021", title: "Security Division", desc: "Expanded into cybersecurity consulting, offering penetration testing, security audits, and incident response retainers." },
   { year: "2022", title: "Network Engineering", desc: "Added network infrastructure design and deployment to our growing service portfolio, serving multi-site enterprises." },
@@ -107,7 +107,7 @@ const About = () => {
         bgImage={heroImg}
         eyebrow="About Us · Chapter One"
         title={<>The company behind the <span className="nexus-text">code</span></>}
-        subtitle="Cosmos 8 is a Kampala-based technology firm built on the conviction that African innovation can — and should — compete on the world stage."
+        subtitle="Cozmos 8 is a Kampala-based technology firm built on the conviction that African innovation can — and should — compete on the world stage."
         alt="Holographic blueprint of a digital cathedral"
       />
 
@@ -122,7 +122,7 @@ const About = () => {
             <div className="space-y-5 text-foreground text-lg leading-relaxed text-textured">
               <p>
                 The technology industry has a quiet crisis: software shipped half-finished, networks held together with hope,
-                and security treated as a checkbox. Cosmos 8 exists because that approach is unacceptable when real businesses,
+                and security treated as a checkbox. Cozmos 8 exists because that approach is unacceptable when real businesses,
                 real users, and real money depend on the systems we ship.
               </p>
               <p>
@@ -151,7 +151,7 @@ const About = () => {
               <p className="text-xs sm:text-sm font-mono text-water uppercase tracking-widest mb-2 text-etched">Founder & Lead Computer Scientist</p>
               <h3 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Mugisha Gordon</h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Mugisha Gordon is the founder and lead computer scientist at Cosmos 8. With years of hands-on experience
+                Mugisha Gordon is the founder and lead computer scientist at Cozmos 8. With years of hands-on experience
                 in software engineering, mobile deployment architecture, and cybersecurity, he leads a team dedicated
                 to building resilient, production-grade systems for organisations that cannot afford downtime.
               </p>
@@ -162,7 +162,7 @@ const About = () => {
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 He believes the next decade of African tech will be defined not by who can build fastest, but by who
-                can build best — and Cosmos 8 is his answer to that bet.
+                can build best — and Cozmos 8 is his answer to that bet.
               </p>
             </div>
             <TerminalEffect />

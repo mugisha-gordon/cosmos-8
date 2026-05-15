@@ -9,9 +9,9 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="md:col-span-1">
-            <img src={logo} alt="Cosmos 8" className="h-16 w-auto mb-4" />
+            <img src={logo} alt="Cozmos 8" className="h-16 w-auto mb-4" />
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Cosmos 8 is a technology company specializing in software development, 
+              Cozmos 8 is a technology company specializing in software development, 
               network engineering, and cybersecurity solutions for businesses across East Africa and beyond.
             </p>
           </div>
@@ -69,7 +69,7 @@ const Footer = () => {
 
         <div className="mt-12 pt-8 border-t border-border/30 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-xs text-muted-foreground font-mono">
-            © {new Date().getFullYear()} Cosmos 8 — Tech. Done Right.
+            © {new Date().getFullYear()} Cozmos 8 — Tech. Done Right.
           </p>
           <div className="flex items-center gap-6 text-xs text-muted-foreground">
             <span>Privacy Policy</span>
