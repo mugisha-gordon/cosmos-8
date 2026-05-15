@@ -51,7 +51,7 @@ const Index = () => {
       <PageHero
         bgImage={heroImg}
         eyebrow="Tech Done Right"
-        title={<>COSMOS <span className="nexus-text">8</span></>}
+        title={<>CO<span className="dramatic-z">Z</span>MOS <span className="nexus-text">8</span></>}
         subtitle="A Kampala-born technology firm engineering software, networks, and security systems for organizations that demand the right thing, built right, the first time."
         alt="Cosmic vortex blending water and fire energies"
       >

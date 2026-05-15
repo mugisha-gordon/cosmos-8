@@ -23,7 +23,7 @@ const Header = () => {
         <Link to="/" className="flex items-center gap-3">
           <img src={logo} alt="Cozmos 8 Logo" className="h-10 w-auto" />
           <span className="font-display font-bold text-lg tracking-wider nexus-text hidden sm:inline">
-            COZMOS 8
+            CO<span className="dramatic-z">Z</span>MOS 8
           </span>
         </Link>
         <nav className="hidden lg:flex items-center gap-8">
