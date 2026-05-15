@@ -87,7 +87,7 @@ const AIChatButton = () => {
     <>
       <motion.button
         onClick={() => setOpen((o) => !o)}
-        className="fixed bottom-24 right-6 z-50 flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-br from-water via-nexus to-fire text-white shadow-lg hover:shadow-xl transition-all"
+        className="fixed bottom-[5.5rem] right-4 sm:right-6 z-50 flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-gradient-to-br from-water via-nexus to-fire text-white shadow-lg hover:shadow-xl transition-all"
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ delay: 1.7, type: "spring", stiffness: 200 }}
@@ -96,7 +96,7 @@ const AIChatButton = () => {
         aria-label="Open AI chat"
         style={{ boxShadow: "0 8px 32px hsl(var(--nexus) / 0.5)" }}
       >
-        {open ? <X size={22} /> : <MessageSquare size={22} />}
+        {open ? <X size={20} /> : <MessageSquare size={20} />}
       </motion.button>
 
       <AnimatePresence>
@@ -106,7 +106,10 @@ const AIChatButton = () => {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
             transition={{ duration: 0.2 }}
-            className="fixed bottom-44 right-6 z-50 w-[calc(100vw-3rem)] sm:w-96 h-[28rem] glass-card flex flex-col overflow-hidden"
+            className="fixed z-50 glass-card flex flex-col overflow-hidden
+              bottom-[10rem] right-3 left-3 sm:left-auto sm:right-6
+              sm:w-[22rem] md:w-96
+              max-h-[min(28rem,calc(100dvh-12rem))] h-[min(28rem,calc(100dvh-12rem))]"
           >
             <div className="flex items-center gap-2 px-4 py-3 border-b border-glass-border/40 bg-gradient-to-r from-water/10 via-nexus/10 to-fire/10">
               <Sparkles size={16} className="text-nexus" />
