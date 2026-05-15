@@ -18,7 +18,7 @@ const BackToTopButton = () => {
         <motion.button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           aria-label="Back to top"
-          className="fixed bottom-24 right-6 z-50 flex items-center justify-center w-12 h-12 rounded-full text-primary-foreground border border-glass-border/60 backdrop-blur-xl"
+          className="fixed bottom-[9.5rem] sm:bottom-[10.5rem] right-4 sm:right-6 z-50 flex items-center justify-center w-11 h-11 sm:w-12 sm:h-12 rounded-full text-primary-foreground border border-glass-border/60 backdrop-blur-xl"
           style={{
             background:
               "linear-gradient(135deg, hsl(var(--water)) 0%, hsl(var(--nexus)) 50%, hsl(var(--fire)) 100%)",
